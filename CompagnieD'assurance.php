@@ -46,7 +46,6 @@ if ($age < 25) {
         }  
 else{
     echo "Refuser";
-    echo"looser";
 }       
 
 
