@@ -17,33 +17,55 @@ $fidelite = intval(readline("Depuis combien d'année êtes vous abonnès à notr
 if ($age < 25) {
 
     if (($agepermis < 2) && ($nombreaccident === 0) && ($fidelite < 5)){
-        echo "Vous avez le tarif rouge ";
+        echo "Vous avez le tarif rouge " . "\n";
     }
-        if (($agepermis > 2) && ($nombreaccident === 0) && ($fidelite > 5)){
-        echo "Vous avez le tarif vert ";
+        if (($agepermis < 2) && ($nombreaccident === 0) && ($fidelite > 5)){
+        echo "Vous avez le tarif orange " . "\n";
+    }
+        else if (($agepermis > 2) && ($nombreaccident === 0) && ($fidelite > 5)){
+        echo "Vous avez le tarif vert " . "\n";
         }
+        else if (($agepermis > 2) && ($nombreaccident === 0) && ($fidelite < 5)){
+            echo "Vous avez le tarif orange " . "\n";
+     }
         else if (($agepermis > 2) && ($nombreaccident === 1) && ($fidelite > 5)){
-        echo "Vous avez le tarif orange";
+        echo "Vous avez le tarif orange" . "\n";
+    } 
+        else if (($agepermis > 2) && ($nombreaccident === 1) && ($fidelite < 5)){
+        echo "Vous avez le tarif rouge" . "\n";
     }
 }
 //Plus de 25ans 
     else if ($age > 25) {
-    }
+    
         if (($agepermis < 2) && ($nombreaccident === 0) && ($fidelite < 5)) {
-            echo "Vous avez le tarif orange";
+            echo "Vous avez le tarif orange" . "\n";
+        } 
+        else if (($agepermis < 2) && ($nombreaccident === 0) && ($fidelite > 5)) {
+            echo "Vous avez le tarif vert" . "\n";
         } 
         else if (($agepermis < 2) && ($nombreaccident === 1) && ($fidelite > 5)) {
-            echo "Vous avez le tarif orange";
+            echo "Vous avez le tarif orange" . "\n";
         }
-     else if (($agepermis > 2 ) && ($nombreaccident === 0) && ($fidelite > 5)){
-        echo "Vous avez le tarif Vert ";
+        else if (($agepermis < 2) && ($nombreaccident === 1) && ($fidelite < 5)) {
+            echo "Vous avez le tarif rouge" . "\n";
+        }
+     else if (($agepermis > 2 ) && ($nombreaccident === 0) && ($fidelite > 5) || ($Fidelite < 5)){
+        echo "Vous avez le tarif Vert " . "\n";
      }
         if(($agepermis > 2) && ($nombreaccident === 1) && ($fidelite > 5)){
-            echo "Vous avez le tarif Vert";
+            echo "Vous avez le tarif Vert" . "\n";
+        }
+        if(($agepermis > 2) && ($nombreaccident === 1) && ($fidelite < 5)){
+            echo "Vous avez le tarif orange" . "\n";
         }
             else if (($agepermis > 2) && ($nombreaccident === 2) && ($fidelite > 5)){
-            echo "Vous avez le tarif orange";
-        }  
+            echo "Vous avez le tarif orange" . "\n";
+        } 
+         else if (($agepermis > 2) && ($nombreaccident === 2) && ($fidelite < 5)){
+            echo "Vous avez le tarif rouge" . "\n";
+        } 
+    } 
 else{
     echo "Refuser";
 }       
