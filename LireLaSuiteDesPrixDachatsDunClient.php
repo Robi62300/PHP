@@ -11,6 +11,7 @@ $Billet10 = 10;
 $Billet5 = 5;
 $Piece1 = 1;
 $sommedesproduits = 0;
+$Rendu = 0;
 
 //PROCEDURE
 $CoutDuProduit = intval(readline("Veuillez saisir le prix de votre premier achat : ")) ;
