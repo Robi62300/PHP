@@ -5,8 +5,7 @@
 
 //Variables
 $CoutDuProduit = 0;
-$ArgenDonne = 0;
-$somme = 0;
+$ArgentDonne = 0;
 $Billet10 = 10;
 $Billet5 = 5;
 $Piece1 = 1;
@@ -22,8 +21,8 @@ $sommedesproduits = ($sommedesproduits+$CoutDuProduit);
 }
 
 echo "Vous devez la modique somme de : " . $sommedesproduits . " € " . "\n";                    // On calcule la somme des produits acheté par le client
-$ArgenDonne = intval(readline("Argent donné par le client :  " )) . "\n";                       // On demande l'argent donné par le client 
-$rendu = ($ArgenDonne-$sommedesproduits);                                                       // On calcule ce que l'on doit rendre au client
+$ArgentDonne = intval(readline("Argent donné par le client :  " )) . "\n";                       // On demande l'argent donné par le client 
+$rendu = ($ArgentDonne-$sommedesproduits);                                                       // On calcule ce que l'on doit rendre au client
 
 $Billet10 = abs(intval(($rendu / 10)));
 $Billet5 = abs(intval(($rendu % 10) /5 ));
